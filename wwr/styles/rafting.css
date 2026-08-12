@@ -456,3 +456,500 @@ footer .socialmedia {
     margin-top: 8px;
     font-weight: bold;
 }
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.home-hero {
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.home-hero > img {
+    display: block;
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+}
+
+.home-hero h1 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    margin: 0;
+    text-align: center;
+    background-color: rgba(117, 178, 224, 0.9);
+    color: var(--accent1-color);
+    font-family: var(--heading-font);
+    font-size: 2rem;
+}
+
+.hero-message {
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+    right: 40px;
+    padding: 18px 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.hero-message p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* =========================
+   HOME INTRODUCTION
+========================= */
+
+.home-intro {
+    text-align: center;
+    padding: 15px 40px 25px;
+}
+
+.home-intro h2 {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.home-intro p {
+    max-width: 650px;
+    margin: 0 auto 20px;
+    line-height: 1.5;
+}
+
+/* =========================
+   CALL TO ACTION
+========================= */
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    text-decoration: none;
+    border: 1px solid #555;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #eeeeee;
+}
+
+/* =========================
+   HOME GRID
+========================= */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 10px 4px 30px;
+}
+
+.home-card {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 15px;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #555;
+    background-color: #fafafa;
+}
+
+.home-card img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.home-card h2 {
+    margin: 0 0 8px;
+    font-family: var(--heading-font);
+    font-size: 1.25rem;
+}
+
+.home-card p {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter {
+    margin: 10px 4px 30px;
+    padding: 20px 30px;
+    background-color: var(--secondary-color);
+    border: 1px solid #555;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin: 0 0 8px;
+    font-family: var(--heading-font);
+}
+
+.newsletter p {
+    margin-bottom: 15px;
+}
+
+.newsletter form {
+    display: grid;
+    grid-template-columns: 70px 1fr 70px 1fr 100px;
+    gap: 8px;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.newsletter label {
+    font-size: 0.85rem;
+    text-align: right;
+}
+
+.newsletter input {
+    height: 30px;
+    padding: 5px 7px;
+    border: 1px solid #777;
+    border-radius: 3px;
+}
+
+.newsletter button {
+    height: 30px;
+    background-color: white;
+    border: 1px solid #777;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.newsletter button:hover {
+    background-color: #eeeeee;
+}
+
+/* =========================
+   HOME RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 700px) {
+
+    header,
+    main,
+    footer {
+        width: 100%;
+    }
+
+    header {
+        height: auto;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 15px;
+    }
+
+    header > img {
+        justify-self: center;
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav a {
+        padding: 6px 12px;
+    }
+
+    .home-hero > img {
+        height: 300px;
+    }
+
+    .home-hero h1 {
+        top: 15px;
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+
+    .hero-message {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        padding: 10px;
+    }
+
+    .hero-message p {
+        font-size: 0.85rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .home-card {
+        grid-template-columns: 110px 1fr;
+    }
+
+    .home-card img {
+        width: 110px;
+        height: 100px;
+    }
+
+    .newsletter form {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter label {
+        text-align: left;
+    }
+
+    .newsletter input,
+    .newsletter button {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .socialmedia {
+        position: static;
+    }
+}
+
+/* =========================
+   TRIPS PAGE
+========================= */
+
+.trips-hero {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.trips-hero > img {
+    display: block;
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.trips-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.trips-hero-content h1 {
+    margin: 0 0 10px;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+}
+
+.trips-hero-content p {
+    margin: 0 auto 18px;
+    line-height: 1.5;
+}
+
+/* =========================
+   TRIP CTA
+========================= */
+
+.trips-cta {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    border: 1px solid #555;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.trips-cta:hover {
+    background-color: #eeeeee;
+}
+
+/* =========================
+   TRIP DESCRIPTIONS
+========================= */
+
+.trip-descriptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 0 4px 30px;
+}
+
+.trip-descriptions > h2 {
+    grid-column: 1 / 3;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.trip-card {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #555;
+    background-color: #fafafa;
+    align-items: start;
+}
+
+.trip-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.trip-card-content h3 {
+    margin: 0 0 8px;
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+}
+
+.trip-card-content p {
+    margin: 0 0 8px;
+    font-size: 0.82rem;
+    line-height: 1.4;
+}
+
+.trip-card-content strong {
+    font-size: 0.8rem;
+}
+
+/* =========================
+   TRIPS TABLE
+========================= */
+
+.trip-table-section {
+    margin: 0 4px 30px;
+}
+
+.trip-table-section h2 {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.trip-table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fafafa;
+}
+
+.trip-table-section th,
+.trip-table-section td {
+    padding: 10px;
+    border: 1px solid #555;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.trip-table-section th {
+    background-color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.trip-table-section tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+/* =========================
+   FINAL CONTACT SECTION
+========================= */
+
+.trips-contact {
+    margin: 0 4px 30px;
+    padding: 25px 40px;
+    background-color: var(--secondary-color);
+    border: 1px solid #555;
+    text-align: center;
+}
+
+.trips-contact h2 {
+    margin: 0 0 10px;
+    font-family: var(--heading-font);
+}
+
+.trips-contact p {
+    max-width: 650px;
+    margin: 0 auto 18px;
+    line-height: 1.5;
+}
+
+/* =========================
+   TRIPS RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 700px) {
+
+    .trips-hero > img {
+        height: 350px;
+    }
+
+    .trips-hero-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .trips-hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .trips-hero-content p {
+        font-size: 0.85rem;
+    }
+
+    .trip-descriptions {
+        grid-template-columns: 1fr;
+    }
+
+    .trip-descriptions > h2 {
+        grid-column: 1;
+    }
+
+    .trip-card {
+        grid-template-columns: 110px 1fr;
+    }
+
+    .trip-card img {
+        width: 110px;
+        height: 120px;
+    }
+
+    .trip-table-section th,
+    .trip-table-section td {
+        padding: 8px;
+        font-size: 0.75rem;
+    }
+
+    .trips-contact {
+        padding: 20px 15px;
+    }
+}
