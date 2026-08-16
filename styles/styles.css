@@ -1,4 +1,4 @@
-root {
+:root {
     --heading-background-color: #f06;
     --heading-text-color: #333;
     --heading-font: 'Montserrat', Helvetica, sans-serif;
@@ -19,6 +19,7 @@ header {
 nav {
     display: flex;
     gap: 20px;
+    background-color: #333;
     padding: 10px;
 }
 
@@ -26,6 +27,7 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 10px;
+    display: block;
 }
 
 h1 {
@@ -66,7 +68,7 @@ aside {
 }
 
 aside img {
-    width: 100%;
+    width: 200px;
     height: auto;
 }
 
